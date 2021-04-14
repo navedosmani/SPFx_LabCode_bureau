@@ -60,11 +60,40 @@ export default class SpFxReactSPlistData extends React.Component<ISpFxReactSPlis
           <div className={ styles.row }>
             <div className={ styles.column }>
               <span className={ styles.title }>Welcome to SP Data using React!</span>
-              <ProductsList products={this.state.products}/>
+              <ProductsList products={this.state.products} onRemoveProduct={this._removeProduct}/>
             </div>
           </div>
         </div>
       </div>
     );
   }
+
+  private _removeProduct = (product:IProducts):void =>{
+    const newProducts = this.state.products.filter(_product => _product != product);
+    this.setState({products:newProducts});
+
+    this.deleteProductfromSPList(product.id);
+  }
+
+  private deleteProductfromSPList(id:number):Promise<IProducts[]>{
+    return new Promise<IProducts[]>((resolve,reject)=>{
+      const url:string = `${this.props.currentUrl}/_api/lists/getbytitle('Test02')/items(${id})`;
+      this.props.spHttpClient.post(url, SPHttpClient.configurations.v1,{
+        headers:{
+          'Accept': 'application/json;odata=nometadata',
+            'Content-type': 'application/json;odata=verbose',
+            'odata-version': '',
+            'IF-MATCH': '*',
+            'X-HTTP-Method': 'DELETE'
+        }
+      })
+      .then((response:SPHttpClientResponse):void =>{
+        alert(`Product delected sucessfully`);
+      },(error:any):void =>{
+        alert(`${error}`);
+      });
+    });
+  }
+
+
 }
