@@ -73,6 +73,8 @@ export default class SpFxReactSPlistData extends React.Component<ISpFxReactSPlis
     this.setState({products:newProducts});
 
     this.deleteProductfromSPList(product.id);
+
+    //return "Product deleted sucessfully";
   }
 
   private deleteProductfromSPList(id:number):Promise<IProducts[]>{
@@ -88,7 +90,7 @@ export default class SpFxReactSPlistData extends React.Component<ISpFxReactSPlis
         }
       })
       .then((response:SPHttpClientResponse):void =>{
-        alert(`Product delected sucessfully`);
+        alert(`Product deleted sucessfully`);
       },(error:any):void =>{
         alert(`${error}`);
       });

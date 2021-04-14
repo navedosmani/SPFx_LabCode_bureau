@@ -26,6 +26,9 @@ export class ProductsList extends React.Component<IProductsListProps, {}>{
 
   private onButtonClick(product: IProducts): void {
     if (window.confirm('Are you sure delete the product'))
-      this.props.onRemoveProduct(product);
+     this.props.onRemoveProduct(product);
+
   }
+
+
 }
