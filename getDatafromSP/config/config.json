@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dynamicdata-sp-fx-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dynamicdataSpFx/DynamicdataSpFxWebPart.js",
+          "manifest": "./src/webparts/dynamicdataSpFx/DynamicdataSpFxWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DynamicdataSpFxWebPartStrings": "lib/webparts/dynamicdataSpFx/loc/{locale}.js"
+  }
+}

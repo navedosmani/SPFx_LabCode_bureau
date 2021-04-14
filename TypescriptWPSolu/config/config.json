@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "typescript-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/typescriptWp/TypescriptWpWebPart.js",
+          "manifest": "./src/webparts/typescriptWp/TypescriptWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TypescriptWpWebPartStrings": "lib/webparts/typescriptWp/loc/{locale}.js"
+  }
+}

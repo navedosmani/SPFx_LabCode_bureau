@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "oob-property-pane-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/oobPropertyPane/OobPropertyPaneWebPart.js",
+          "manifest": "./src/webparts/oobPropertyPane/OobPropertyPaneWebPart.manifest.json"
+        }
+      ]
+    },
+    "property-pane-custom-field-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/propertyPaneCustomField/PropertyPaneCustomFieldWebPart.js",
+          "manifest": "./src/webparts/propertyPaneCustomField/PropertyPaneCustomFieldWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "OobPropertyPaneWebPartStrings": "lib/webparts/oobPropertyPane/loc/{locale}.js",
+    "PropertyPaneCustomFieldWebPartStrings": "lib/webparts/propertyPaneCustomField/loc/{locale}.js"
+  }
+}

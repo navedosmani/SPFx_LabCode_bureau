@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-react-s-plist-data-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxReactSPlistData/SpFxReactSPlistDataWebPart.js",
+          "manifest": "./src/webparts/spFxReactSPlistData/SpFxReactSPlistDataWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxReactSPlistDataWebPartStrings": "lib/webparts/spFxReactSPlistData/loc/{locale}.js"
+  }
+}
