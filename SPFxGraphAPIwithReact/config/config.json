@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-consume-sp-list-data-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxConsumeSpListData/SpFxConsumeSpListDataWebPart.js",
+          "manifest": "./src/webparts/spFxConsumeSpListData/SpFxConsumeSpListDataWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxConsumeSpListDataWebPartStrings": "lib/webparts/spFxConsumeSpListData/loc/{locale}.js"
+  }
+}

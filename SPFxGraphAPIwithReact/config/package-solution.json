@@ -1,0 +1,34 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "sp-fx-graph-ap-iwith-react-client-side-solution",
+        "id": "4ded1aa6-748f-447c-9dd6-f5cc9af4428f",
+        "version": "1.0.0.0",
+        "includeClientSideAssets": true,
+        "skipFeatureDeployment": true,
+        "isDomainIsolated": true,
+        "webApiPermissionRequests": [{
+                "resource": "Microsoft Graph",
+                "scope": "Sites.Read.All"
+            },
+            {
+                "resource": "Microsoft Graph",
+                "scope": "Sites.ReadWrite.All"
+            },
+            {
+                "resource": "Microsoft Graph",
+                "scope": "User.ReadBasic.All"
+            }
+        ],
+        "developer": {
+            "name": "",
+            "websiteUrl": "",
+            "privacyUrl": "",
+            "termsOfUseUrl": "",
+            "mpnId": ""
+        }
+    },
+    "paths": {
+        "zippedPackage": "solution/sp-fx-graph-ap-iwith-react.sppkg"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfxpnp-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxpnpWp/SpfxpnpWpWebPart.js",
+          "manifest": "./src/webparts/spfxpnpWp/SpfxpnpWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxpnpWpWebPartStrings": "lib/webparts/spfxpnpWp/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
