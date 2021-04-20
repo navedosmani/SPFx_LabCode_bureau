@@ -1,0 +1,31 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+    "port": 4321,
+    "https": true,
+    "serveConfigurations": {
+        "default": {
+            "pageUrl": "https://bureauspfx.sharepoint.com/SitePages/Home.aspx",
+            "customActions": {
+                "0447ddbe-eea5-4e25-a0d2-9ea73ba18dde": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {
+                        "Top": "Top area of the page",
+                        "Bottom": "Bottom area of the page"
+                    }
+                }
+            }
+        },
+        "myAppcustomizer": {
+            "pageUrl": "https://bureauspfx.sharepoint.com/SitePages/Home.aspx",
+            "customActions": {
+                "0447ddbe-eea5-4e25-a0d2-9ea73ba18dde": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {
+                        "Top": "Top area of the page",
+                        "Bottom": "Bottom area of the page"
+                    }
+                }
+            }
+        }
+    }
+}

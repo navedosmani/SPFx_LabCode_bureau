@@ -1,0 +1,29 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+    "port": 4321,
+    "https": true,
+    "serveConfigurations": {
+        "default": {
+            "pageUrl": "https://bureauspfx.sharepoint.com/Lists/Test01/AllItems.aspx",
+            "fieldCustomizers": {
+                "Percentage": {
+                    "id": "8684ca24-b785-4679-9792-57b6efcf5fac",
+                    "properties": {
+                        "sampleText": "SPFx"
+                    }
+                }
+            }
+        },
+        "myfieldcustomer": {
+            "pageUrl": "https://bureauspfx.sharepoint.com/Lists/Test01/AllItems.aspx",
+            "fieldCustomizers": {
+                "Percentage": {
+                    "id": "8684ca24-b785-4679-9792-57b6efcf5fac",
+                    "properties": {
+                        "sampleText": "SPFx"
+                    }
+                }
+            }
+        }
+    }
+}

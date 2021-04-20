@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mylistview-cs-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/mylistviewCs/MylistviewCsCommandSet.js",
+          "manifest": "./src/extensions/mylistviewCs/MylistviewCsCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MylistviewCsCommandSetStrings": "lib/extensions/mylistviewCs/loc/{locale}.js"
+  }
+}

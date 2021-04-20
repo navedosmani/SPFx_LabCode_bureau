@@ -1,0 +1,9 @@
+{
+  "id": "158abcc4-61e7-4bf3-94cc-7da32cf9caa4",
+  "alias": "MylibrarySolutionLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}
